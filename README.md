@@ -1,23 +1,45 @@
-# From Deception to Learning
-**Next-Gen Hybrid Intrusion Detection System**  
-High-interaction Honeypot + Continual Learning AI (River)
+# Hybrid IDS & Honeypot System Using AI
 
-**Capstone Project 2025 – In Progress**
+This repository presents a graduation project in cybersecurity that combines
+a Honeypot system with an Intrusion Detection System (IDS) enhanced by
+Artificial Intelligence for detecting and analyzing cyber attacks.
 
-### Concept
-Collect real attacks via a live honeypot → automatically extract features → retrain the ML model online without catastrophic forgetting.
+# Project Objective
+The main goal of this project is to design and implement a hybrid security
+architecture capable of:
+- Detecting network-based attacks
+- Analyzing attacker behavior
+- Improving detection accuracy using AI
 
-### Current Status
-- [x] Cowrie honeypot deployed & logging real attacks
-- [ ] Feature extraction pipeline
-- [ ] Continual learning model (River)
-- [ ] Auto-retraining loop
+# System Architecture
+The system consists of three main environments:
 
-### Tech Stack
+- Attacker Machine: Kali Linux
+- Victim Machine: Ubuntu running Cowrie Honeypot
+- Detection & Analysis Machine: Ubuntu Server running Suricata IDS and AI
+
+
+# Attack Flow:
+Kali Linux → Cowrie Honeypot → Suricata IDS → AI Analysis
+
+# Technologies Used
+- Cowrie SSH Honeypot
+- Suricata IDS
+- Ubuntu Server 24.04 LTS
+- Kali Linux
 - Python
-- River (online/continual ML)
-- Cowrie Honeypot
-- Docker
-- ELK Stack
+- VMware
 
-More code, demos & write-up coming very soon…
+ # Implemented Attacks
+- SSH Brute-force attack using Hydra
+- Network scanning and intrusion attempts
+
+ # Logs & Analysis
+- Cowrie logs (JSON)
+- Suricata alerts (eve.json)
+- AI-based anomaly detection (Isolation Forest)
+
+## 📌 Project Status
+- Cowrie Honeypot: ✅ Implemented
+- Suricata IDS: 🔄 In progress
+- AI Analysis: 🔄 Planned
