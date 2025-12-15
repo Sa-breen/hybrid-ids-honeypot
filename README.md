@@ -39,7 +39,7 @@ Kali Linux → Cowrie Honeypot → Suricata IDS → AI Analysis
 - Suricata alerts (eve.json)
 - AI-based anomaly detection (Isolation Forest)
 
-## 📌 Project Status
-- Cowrie Honeypot: ✅ Implemented
-- Suricata IDS: 🔄 In progress
+# Project Status
+- Cowrie Honeypot:  Implemented
+- Suricata IDS:  In progress
 - AI Analysis: 🔄 Planned
